@@ -68,6 +68,6 @@ FROM pizza_sales GROUP BY pizza_name ORDER BY [Total Pizzas Sold] DESC;
 SELECT TOP 5 pizza_name ,COUNT(DISTINCT order_id) as [Total Orders] 
 FROM pizza_sales GROUP BY pizza_name ORDER BY [Total Orders] ASC;
 
---L.Bottom 5 Pizzas by Total Orders--
+--Bottom 5 Pizzas by Total Orders--
 SELECT TOP 5 pizza_name ,COUNT(DISTINCT order_id) as [Total Orders] 
 FROM pizza_sales GROUP BY pizza_name ORDER BY [Total Orders] DESC;
